@@ -38,7 +38,7 @@ export const eventsData = [
         id: 202,
         src: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800",
       },
-      { id: 203, src: "/public/Faculty/aaliya.jpg" },
+      { id: 203, src: "/Faculty/aaliya.jpg" },
     ],
   },
   {
@@ -46,8 +46,8 @@ export const eventsData = [
     title: "Check & Strike",
     date: "6 March 2026",
     desc: "Chess is a classic two-player strategy game played on an $8 \times 8$ grid where players aim to checkmate the opponent's king. Each of the sixteen pieces—from the humble pawn to the powerful queen—moves in unique patterns, requiring deep foresight and tactical planning.",
-    poster: "/public/Events/Chess&Carrom/Carrom&Chess Poster.jpeg",
-    winners: "/public/Events/Chess&Carrom/Chess Winners.jpeg",
+    poster: "/Events/Chess&Carrom/Carrom&Chess Poster.jpeg",
+    winners: "/Events/Chess&Carrom/Chess Winners.jpeg",
     memories: [
       {
         id: 201,
@@ -64,8 +64,8 @@ export const eventsData = [
     title: "Check & Strike",
     date: "6 March 2026",
     desc: "Carrom is a popular strike-and-pocket tabletop game that combines physical skill with an understanding of angles and rebounds. Using a heavy striker, players flick their fingers to knock their colored coins into four corner pockets while competing to cover the red queen.",
-    poster: "/public/Events/Chess&Carrom/Carrom&Chess Poster.jpeg",
-    winners: "/public/Events/Chess&Carrom/Carrom Winners.jpeg",
+    poster: "/Events/Chess&Carrom/Carrom&Chess Poster.jpeg",
+    winners: "/Events/Chess&Carrom/Carrom Winners.jpeg",
     memories: [
       {
         id: 201,
@@ -82,8 +82,8 @@ export const eventsData = [
     title: "Ruchi Verse",
     date: "10 December 2025",
     desc: "Cooking without fire, often called flame-less cooking, is a creative culinary approach that focuses on assembling, mixing, and layering fresh ingredients rather than using heat. This method preserves the natural nutrients and enzymes of raw foods, offering a healthy and refreshing alternative to traditional meals.",
-    poster: "/public/Events/RuchiVerse/RuchiVerse Poster.jpeg",
-    winners: "/public/Events/RuchiVerse/RuchiVerse Winners.jpeg",
+    poster: "/Events/RuchiVerse/RuchiVerse Poster.jpeg",
+    winners: "/Events/RuchiVerse/RuchiVerse Winners.jpeg",
     memories: [
       {
         id: 201,
@@ -100,8 +100,8 @@ export const eventsData = [
     title: "Kannada Nadina Jnanaranga",
     date: "28 November 2025",
     desc: "Kannada is one of the world's oldest living languages, boasting a rich literary history that spans over 1,500 years and a unique, rounded script. As the official language of Karnataka, it is celebrated for its musical phonetics and has been awarded Classical Language status by the Indian government.",
-    poster: "/public/Events/Kannada/Kannada Poster.jpeg",
-    winners: "/public/Events/Kannada/Kannada Winners.jpeg",
+    poster: "/Events/Kannada/Kannada Poster.jpeg",
+    winners: "/Events/Kannada/Kannada Winners.jpeg",
     memories: [
       {
         id: 201,
