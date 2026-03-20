@@ -117,7 +117,7 @@ export default function Gallery() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               src={filteredImages[selectedImgIndex].src}
-              className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl"
+              className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg shadow-2xl md:mt-20"
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
             />
 
@@ -128,7 +128,7 @@ export default function Gallery() {
               <ChevronRight size={48} />
             </button>
 
-            <div className="absolute bottom-6 text-white font-bold text-xl glass-card px-6 py-2 rounded-full">
+            <div className="absolute bottom-11 text-white font-bold text-xl glass-card px-6 py-2 rounded-full">
               {filteredImages[selectedImgIndex].event}
             </div>
           </motion.div>

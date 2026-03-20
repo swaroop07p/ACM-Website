@@ -14,7 +14,7 @@ export const eventsData = [
     memories: [
       {
         id: 101,
-        src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+        src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1769508858/recipe-ai-uploads/musan2mtco7mzkfpzfoa.webp",
       },
       {
         id: 102,
@@ -87,11 +87,15 @@ export const eventsData = [
     memories: [
       {
         id: 201,
-        src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800",
+        src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774029578/AIM05053_ie0x1m.jpg",
       },
       {
         id: 202,
-        src: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800",
+        src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774029577/AIM05106_zehfme.jpg",
+      },
+      {
+        id: 203,
+        src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774029577/AIM05076_f3gvov.jpg",
       },
     ],
   },
@@ -104,11 +108,11 @@ export const eventsData = [
     winners: "/Events/Kannada/Kannada Winners.jpeg",
     memories: [
       {
-        id: 201,
+        id: 101,
         src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800",
       },
       {
-        id: 202,
+        id: 102,
         src: "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800",
       },
     ],
@@ -130,7 +134,7 @@ export default function EventsList() {
           {eventsData.map((event) => (
             <div
               key={event.id}
-              className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group"
+              className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group" data-aos="flip-up"
             >
               {/* Dual Image Display */}
               <div className="flex-shrink-0 w-full lg:w-1/2 flex gap-4">
