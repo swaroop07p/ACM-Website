@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/60 dark:bg-[#1e293b]/80 backdrop-blur-xl border border-white/40 dark:border-slate-700/50 shadow-xl text-slate-800 dark:text-slate-200;
+  }
+  
+  .navbar-glow {
+    animation: pulse-border 1.5s ease-in-out infinite alternate;
+  }
+}
+
+body {
+  @apply bg-slate-200 dark:bg-[#0f172a] text-slate-900 dark:text-slate-200;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ==============================================
+   NEW ANIMATION: CYBER TECH GRID & PLASMA ORBS
+============================================== */
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -5; /* Sits in front of birds (-10), but behind UI! */
+  pointer-events: none;
+  overflow: hidden;
+
+  /* The Moving Tech Grid */
+  background-image: 
+    linear-gradient(rgba(20, 69, 231, 0.1) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(20, 69, 231, 0.1) 2px, transparent 2px);
+  background-size: 40px 40px;
+  animation: pan-grid 3s linear infinite;
+  opacity: 0.7; /* Semi-transparent so birds show through */
+}
+
+/* Dark Mode Grid Colors */
+.dark .animated-bg {
+  background-image: 
+    linear-gradient(rgba(20, 184, 166, 0.15) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(20, 184, 166, 0.15) 2px, transparent 2px);
+}
+
+/* Glowing Plasma Orbs attached to the background */
+.animated-bg::before, .animated-bg::after {
+  content: "";
+  position: absolute;
+  inset: -50%; /* Massive size to prevent clipping */
+  z-index: -6;
+  pointer-events: none;
+}
+
+/* Teal Orb */
+.animated-bg::before {
+  background: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.15), transparent 40%);
+  animation: float-orb-1 15s ease-in-out infinite alternate;
+}
+
+/* Blue Orb */
+.animated-bg::after {
+  background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15), transparent 50%);
+  animation: float-orb-2 20s ease-in-out infinite alternate;
+}
+
+/* Dark mode variations for the orbs */
+.dark .animated-bg::before { background: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.25), transparent 40%); }
+.dark .animated-bg::after { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.25), transparent 50%); }
+
+/* Keyframes for the Grid and Orbs */
+@keyframes pan-grid {
+  from { background-position: 0 0; }
+  to { background-position: 0 40px; } /* Moves the pattern internally */
+}
+
+@keyframes float-orb-1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(20vw, 20vh) scale(1.5); }
+}
+
+@keyframes float-orb-2 {
+  0% { transform: translate(20vw, -10vh) scale(1.2); }
+  100% { transform: translate(-20vw, 20vh) scale(0.8); }
+}
+
+/* ==============================================
+   EXISTING ANIMATIONS & SCROLLBAR
+============================================== */
+@keyframes pulse-border {
+  0% { 
+    box-shadow: 0 0 15px rgba(20, 184, 166, 0.2), inset 0 0 5px rgba(20, 184, 166, 0.1); 
+    border-color: rgba(20, 184, 166, 0.3);
+  }
+  100% { 
+    box-shadow: 0 0 25px rgba(20, 184, 166, 0.5), inset 0 0 10px rgba(20, 184, 166, 0.2); 
+    border-color: rgba(20, 184, 166, 0.6);
+  }
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-teal-500/50 rounded-full hover:bg-teal-400 transition-colors; }
+
