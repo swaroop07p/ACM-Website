@@ -84,7 +84,7 @@ export default function Gallery() {
           />
           <input
             type="text"
-            placeholder="Search events (e.g., Hackathon)"
+            placeholder="Search events by name..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full glass-card py-3 pl-10 pr-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white/50 dark:bg-black/50"

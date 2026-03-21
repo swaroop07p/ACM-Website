@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import ScrollProgress from "./components/layout/ScrollProgress";
@@ -52,7 +51,7 @@ function App() {
         <div className="animated-bg"></div>
 
         {/* ANIMATION 2: The 3D Flying Birds (z-index: -10) */}
-        <VantaBackground darkMode={darkMode} />
+        {/* <VantaBackground darkMode={darkMode} /> */}
 
         {/* App Content */}
         <ScrollProgress />

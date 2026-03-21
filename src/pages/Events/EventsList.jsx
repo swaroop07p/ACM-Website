@@ -25,13 +25,13 @@ export default function EventsList() {
 
         {/* 3. ADD THE SEARCH BAR HERE */}
         <div className="max-w-md mx-auto mb-3 relative" data-aos="fade-up">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400 z-10" size={20} />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10" size={20} />
           <input 
             type="text" 
             placeholder="Search events by title..." 
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full glass-card py-4 pl-12 pr-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white/50 dark:bg-slate-900/50 text-slate-800 dark:text-slate-200 shadow-lg"
+            className="w-full glass-card py-3 pl-10 pr-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white/50 dark:bg-black/50"
           />
         </div>
 
