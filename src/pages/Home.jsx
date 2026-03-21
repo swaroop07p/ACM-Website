@@ -87,7 +87,7 @@ export default function Home() {
       </div>
 
       {/* Div 2: About Us */}
-      <section className="py-5" data-aos="flip-down">
+      <section className="py-10" data-aos="flip-down">
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-4">
             <h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 font-bold">
