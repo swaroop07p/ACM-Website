@@ -93,7 +93,7 @@ export default function EventDetails() {
               key={selectedImgIndex}
               initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
               src={eventMemories[selectedImgIndex].src}
-              className="max-h-[80vh] max-w-[90vw] object-contain rounded-xl shadow-2xl md:mt-20 mt-20"
+              className="max-h-[80vh] max-w-[90vw] object-contain rounded-xl shadow-2xl md:mt-20"
               onClick={(e) => e.stopPropagation()} 
             />
 
