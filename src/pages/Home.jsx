@@ -49,7 +49,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}
           /* ADDED py-16 (Mobile) and md:py-32 (Laptop) below */
-          className="relative min-h-[80vh] py-10 md:py-25 flex flex-col items-center justify-center text-center space-y-8 rounded-3xl overflow-hidden shadow-2xl"
+          className="relative min-h-[80vh] py-10 md:py-25 flex flex-col items-center justify-center text-center space-y-8 rounded-3xl overflow-hidden shadow-2xl navbar-glow"
           data-aos="fade-up"
         >
           {/* <div className="absolute inset-0 bg-white/60 dark:bg-black/50 -z-10"></div> */}
@@ -88,7 +88,7 @@ export default function Home() {
 
       {/* Div 2: About Us */}
       <section className="py-5" data-aos="flip-down">
-        <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
+        <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-4">
             <h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 font-bold">
               About Our Chapter
@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* Vision & Mission */}
       <section className="py-10" data-aos="flip-up">
-        <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse gap-8 items-center">
+        <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-6">
             <div>
               <h2 className="text-3xl font-bold mb-3 text-teal-600 dark:text-teal-400">

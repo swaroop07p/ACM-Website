@@ -41,7 +41,7 @@ export default function EventsList() {
             filteredEvents.map((event) => (
               <div
                 key={event.id}
-                className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group"
+                className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] hover:border-teal-400/50"
               >
                 {/* ... The rest of your exact same card code stays here! (Dual images, info, link, etc.) ... */}
                 {/* Dual Image Display */}

@@ -45,7 +45,7 @@ export default function Faculty() {
           {/* Using a 3-column grid for large, prominent cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {facultyMembers.map(faculty => (
-              <div key={faculty.id} className="glass-card rounded-[2rem] overflow-hidden group hover:-translate-y-3 transition-all duration-500 flex flex-col shadow-xl hover:shadow-teal-500/20" data-aos="fade-up">
+              <div key={faculty.id} className="glass-card rounded-[2rem] overflow-hidden group hover:-translate-y-3 transition-all duration-500 flex flex-col shadow-xl hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] hover:border-teal-400/50" data-aos="fade-up">
                 
                 {/* Large Image Container */}
                 <div className="w-full h-[350px] bg-slate-200 dark:bg-slate-800 relative overflow-hidden">

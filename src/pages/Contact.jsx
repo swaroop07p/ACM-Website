@@ -29,7 +29,7 @@ export default function Contact() {
         <h1 className="text-5xl pt-5 py-1 font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500" data-aos="fade-down">Get In Touch</h1>
         
         {/* CHANGED: Added onSubmit={handleSubmit} */}
-        <form className="glass-card rounded-3xl p-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="glass-card rounded-3xl p-8 space-y-6 navbar-glow" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="font-medium ml-1">Your Name</label>
