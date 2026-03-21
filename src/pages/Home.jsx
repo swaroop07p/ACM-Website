@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import LazyImage from "../components/ui/LazyImage";
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 // import aimlLogo from '../assets/images/AIMLLOGO.jpg'; // <-- IMPORT HERE
 
 export default function Home() {
@@ -88,7 +90,7 @@ export default function Home() {
       <section className="py-5" data-aos="flip-down">
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center">
           <div className="flex-1 space-y-4">
-            <h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 font-bold">
+            <h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 font-bold">
               About Our Chapter
             </h2>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -161,7 +163,7 @@ export default function Home() {
 
       {/* Div 3: Recent Events & Registration */}
       {/* Div 3: Recent Events & Registration */}
-      <section id="upcoming-events" className="py-3" data-aos="zoom-in-up">
+      <section id="upcoming-events" className="py-3" data-aos="fade-up">
         <h2 className="text-4xl py-1 md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500">
           Upcoming Events
         </h2>
@@ -208,6 +210,16 @@ export default function Home() {
               </a>
             </div>
           ))}
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Link
+            to="/events"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-slate-800 dark:bg-slate-100 text-white dark:text-slate-900 font-bold rounded-full hover:bg-teal-500 dark:hover:bg-teal-400 hover:text-white transition-all duration-300 shadow-xl hover:shadow-teal-500/30 hover:-translate-y-1 group"
+          >
+            View All Events
+            {/* The arrow will gently slide to the right on hover! */}
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
     </div>

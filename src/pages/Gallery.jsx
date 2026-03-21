@@ -54,12 +54,17 @@ export default function Gallery() {
       {/* <div className="animated-bg"></div> */}
 
       <div className="max-w-7xl mx-auto" data-aos="fade-up">
-        <h1 className="text-5xl font-bold text-center pt-5 mb-8 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 py-1" data-aos="fade-down">Memory Gallery</h1>
+        <h1
+          className="text-5xl font-bold text-center pt-5 mb-8 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 py-1"
+          data-aos="fade-down"
+        >
+          Memory Gallery
+        </h1>
 
         {/* Search Bar */}
         <div className="max-w-md mx-auto mb-12 relative">
           <Search
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-10"
             size={20}
           />
           <input
