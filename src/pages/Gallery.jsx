@@ -7,23 +7,38 @@ import LazyImage from "../components/ui/LazyImage";
 const galleryImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
-    event: "Hackathon 2025",
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105180/WhatsApp_Image_2026-03-21_at_8.20.25_PM_2_tgzkkt.jpg",
+    event: "Falcon Inaugration 2025",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800",
-    event: "Tech Talk",
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105180/WhatsApp_Image_2026-03-21_at_8.20.26_PM_2_jt3nsr.jpg",
+    event: "Falcon Inaugration 2025",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800",
-    event: "Hackathon 2025",
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105180/WhatsApp_Image_2026-03-21_at_8.20.26_PM_1_rtxdxo.jpg",
+    event: "Falcon Inaugration 2025",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800",
-    event: "Hackathon 2025",
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105179/WhatsApp_Image_2026-03-21_at_8.20.25_PM_1_w2d6ph.jpg",
+    event: "Falcon Inaugration 2025",
+  },
+  {
+    id: 5,
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105181/WhatsApp_Image_2026-03-21_at_8.20.26_PM_3_z36g78.jpg",
+    event: "Falcon Inaugration 2025",
+  },
+  {
+    id: 6,
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105180/WhatsApp_Image_2026-03-21_at_8.20.25_PM_u17jkj.jpg",
+    event: "Falcon Inaugration 2025",
+  },
+  {
+    id: 7,
+    src: "https://res.cloudinary.com/dsojrrb9j/image/upload/v1774105181/WhatsApp_Image_2026-03-21_at_8.20.26_PM_unlpn1.jpg",
+    event: "Falcon Inaugration 2025",
   },
 ];
 

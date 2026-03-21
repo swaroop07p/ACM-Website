@@ -32,7 +32,7 @@ export default function Members() {
   const renderTeamSection = (title, teamArray) => (
     <div className="mb-20">
       {/* Category Heading */}
-      <h2 className="text-3xl font-bold mb-8 text-slate-800 dark:text-slate-100 border-b-2 border-teal-500/30 pb-3 inline-block">
+      <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 border-b-2 border-teal-500/30 pb-3 inline-block">
         {title}
       </h2>
       
