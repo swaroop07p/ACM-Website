@@ -274,7 +274,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </div>
 
         {/* Right Side: Theme + Mobile Menu */}
-        <div className="bg-slate-100 dark:bg-slate-800/50 rounded-full px-2 py-1.5 flex items-center gap-1 shrink-0 border border-slate-200 dark:border-slate-700/50">
+        <div className="bg-slate-100 dark:bg-slate-800/50 rounded-full px-2 py-3 flex items-center gap-3 shrink-0 border border-slate-200 dark:border-slate-700/50">
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-1.5 rounded-full hover:bg-white dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 hover:text-yellow-500 transition-all shadow-sm"

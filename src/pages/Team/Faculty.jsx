@@ -9,25 +9,7 @@ const facultyMembers = [
   { id: 5, name: "Mrs. Shaziya Banu S", role: "Assistant Professor", image: "/Faculty/shaziya.jpg", email: "" },
   { id: 6, name: "Mr. Nishanth S", role: "Assistant Professor", image: "/Faculty/nishanth s.jpg", email: "" },
   { id: 7, name: "Ms. Aaliya Waseem", role: "Assistant Professor", image: "/Faculty/aaliya.jpg", email: "" },
-  // Add your 5 other faculty members here!
 ];
-
-// const ProfileCard = ({ person }) => (
-//   <div className="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-//     <div className="h-64 w-full bg-gray-200 dark:bg-slate-700 relative">
-//        {/* Use LazyImage once you have the photos! */}
-//        <span className="absolute inset-0 flex items-center justify-center text-slate-500">Photo Gap</span>
-//     </div>
-//     <div className="p-6 text-center">
-//       <h3 className="text-xl font-bold mb-1">{person.name}</h3>
-//       <p className="text-teal-600 dark:text-teal-400 font-medium mb-4">{person.role}</p>
-//       <div className="flex justify-center gap-4">
-//         <a href={`mailto:${person.email}`} className="text-slate-500 hover:text-teal-500 transition-colors"><Mail size={20} /></a>
-//         <a href="#" className="text-slate-500 hover:text-blue-500 transition-colors"><Linkedin size={20} /></a>
-//       </div>
-//     </div>
-//   </div>
-// );
 
 export default function Faculty() {
     return (
