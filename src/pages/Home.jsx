@@ -41,7 +41,7 @@ export default function Home() {
       {/* Div 1: Hero & AIML Logo */}
       {/* 1. Wrap everything in a container to handle the background "frame" */}
       {/* Outer wrapper - keeps the small margin/frame */}
-      <div className="py-5 md:p-4 w-full">
+      <div className="py-5 md:p-4 w-full" >
         <section
           style={{
             backgroundImage: "url('/Home/JNNCEAIML1.png')",
@@ -49,7 +49,7 @@ export default function Home() {
             // backgroundPosition: "center",
           }}
           /* ADDED py-16 (Mobile) and md:py-32 (Laptop) below added bg-[65%_center] md:bg-center and commented bgp */
-          className="relative min-h-[80vh] bg-[65%_center] md:bg-center py-10 md:py-25 flex flex-col items-center justify-center text-center space-y-8 rounded-3xl overflow-hidden shadow-2xl navbar-glow"
+          className="relative min-h-[80vh] bg-[65%_center] md:bg-center py-10 md:py-25 flex flex-col items-center justify-center text-center space-y-8 rounded-3xl overflow-hidden shadow-2xl navbar-glow" data-aos="flip-up"
         >
           {/* <div className="absolute inset-0 bg-white/60 dark:bg-black/50 -z-10"></div> */}
           {/* This uses a consistent 40% dark tint for both modes */}
@@ -86,7 +86,7 @@ export default function Home() {
       </div>
 
       {/* Div 2: About Us */}
-      <section className="py-10">
+      <section className="py-10" data-aos="flip-down">
       {/* data-aos="fade-up"> */}
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-4">
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-10"> 
+      <section className="py-10" data-aos="flip-up"> 
       {/* data-aos="fade-up"> */}
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-6">
@@ -164,7 +164,7 @@ export default function Home() {
 
       {/* Div 3: Recent Events & Registration */}
       {/* Div 3: Recent Events & Registration */}
-      <section id="upcoming-events" className="py-3">
+      <section id="upcoming-events" className="py-3" data-aos="fade-up">
         {/* data-aos="fade-up"> */}
         <h2 className="text-4xl py-1 md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500">
           Upcoming Events

@@ -42,7 +42,7 @@ export default function Members() {
         {teamArray.map(member => (
           <div 
             key={member.id} 
-            className="glass-card rounded-[1.5rem] overflow-hidden group hover:-translate-y-3 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] dark:hover:shadow-[0_0_40px_rgba(20,184,166,0.4)] hover:border-teal-400/50"
+            className="glass-card rounded-[1.5rem] overflow-hidden group hover:-translate-y-3 transition-all duration-500 flex flex-col hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] dark:hover:shadow-[0_0_40px_rgba(20,184,166,0.4)] hover:border-teal-400/50" data-aos="fade-up"
           >
             {/* Image Section */}
             <div className={`w-full bg-slate-200 dark:bg-slate-800 relative overflow-hidden ${cardSize === 'small' ? 'h-32' : 'h-56'}`}>
@@ -79,7 +79,7 @@ export default function Members() {
 
   return (
     <div className="min-h-screen pt-32 pb-12 relative z-10">
-      <div className="max-w-7xl mx-auto px-4" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto px-1" data-aos="fade-up">
         
         {/* Header & Size Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-7">

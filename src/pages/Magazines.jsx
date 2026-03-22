@@ -173,7 +173,7 @@ export default function Magazines() {
             <div
               key={mag.id}
               className="glass-card rounded-[2rem] p-6 flex flex-col sm:flex-row gap-6 text-left group hover:shadow-teal-500/20 hover:border-teal-500/50 transition-all duration-300" 
-              data-aos="fade-up"
+              data-aos="flip-up"
             >
               {/* Cover Image Section */}
               <div className="w-full sm:w-1/3 shrink-0 bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-500 font-bold overflow-hidden border border-slate-300 dark:border-slate-700 relative">

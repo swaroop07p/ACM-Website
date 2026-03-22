@@ -149,7 +149,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           className="flex items-center gap-3 pl-1 pr-4"
           onClick={closeMenu}
         >
-          <div className="w-32 h-[60px] bg-slate-100 dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden shrink-0 shadow-[0_0_15px_rgba(20,184,166,0.4)] border border-teal-100 dark:border-slate-700 p-0.5">
+          <div className="w-24 h-12 md:w-32 md:h-[60px] bg-slate-100 dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden shrink-0 shadow-[0_0_15px_rgba(20,184,166,0.4)] border border-teal-100 dark:border-slate-700 p-0.5">
             {/* Image for Light Mode */}
             <LazyImage
               src="/Home/ACMLOGO.png"
@@ -274,7 +274,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </div>
 
         {/* Right Side: Theme + Mobile Menu */}
-        <div className="bg-slate-100 dark:bg-slate-800/50 rounded-full px-2 py-3 flex items-center gap-3 shrink-0 border border-slate-200 dark:border-slate-700/50">
+        <div className="bg-slate-100 dark:bg-slate-800/50 rounded-full px-2 py-2 flex items-center gap-1.5 shrink-0 border border-slate-200 dark:border-slate-700/50">
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-1.5 rounded-full hover:bg-white dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 hover:text-yellow-500 transition-all shadow-sm"
@@ -335,7 +335,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="fixed top-24 left-10 -translate-x-1/2 w-[90%] max-w-[350px] bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-2xl border border-teal-500/30 rounded-3xl p-5 shadow-[0_0_40px_rgba(20,184,166,0.2)] z-[100] md:hidden flex flex-col gap-2"
+              className="fixed top-24 left-10 -translate-x-1/2 w-[90%] max-w-[350px] bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-2xl border border-teal-500/30 rounded-3xl p-5 shadow-[0_0_40px_rgba(20,184,166,0.2)] z-[100] md:hidden flex flex-col gap-4"
             >
               {mobileNavItems.map((link) => {
                 const isActive =

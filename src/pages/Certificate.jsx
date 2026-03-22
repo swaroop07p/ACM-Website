@@ -2,7 +2,7 @@ import LazyImage from "../components/ui/LazyImage";
 
 export default function Certificate() {
   return (
-    <div className="min-h-screen pt-24 pb-12 relative z-10 flex flex-col items-center justify-center">
+    <div className="min-h-screen pt-2 md:pt-24 pb-12 relative z-10 flex flex-col items-center justify-center">
       <div className=""></div>
       <h1
         className="text-5xl pt-5 py-1 font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500"

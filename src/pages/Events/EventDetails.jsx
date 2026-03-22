@@ -59,7 +59,7 @@ export default function EventDetails() {
 
         {/* Memory Gallery Grid */}
         {eventMemories.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {eventMemories.map((img, index) => (
               <div key={img.id} className="relative group rounded-2xl overflow-hidden aspect-square shadow-lg border border-white/20 dark:border-slate-700/50 cursor-pointer">
                 <LazyImage 
