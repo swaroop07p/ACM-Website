@@ -21,7 +21,7 @@ export default function Home() {
       description:
         "Join us to build alert and resolution systems! A 24-hour coding marathon to solve real campus issues and win prizes.",
       imagePath: "/Home/UpcommingEvents/CANVAPOSTER.jpeg", // e.g., "/Home/hackathon-poster.jpg"
-      link: "google.com",
+      link: "https://forms.gle/qq5M26rsgwvHZecr8",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function Home() {
       description:
         "Explore the bleeding edge of AI-generated voice detection and audio forensics in our upcoming technical showcase.",
       imagePath: "/Home/UpcommingEvents/ACMPOSTER.jpeg",
-      link: "YOUR_GOOGLE_FORM_LINK_HERE",
+      link: "https://forms.gle/qq5M26rsgwvHZecr8",
     },
   ];
 
@@ -86,7 +86,8 @@ export default function Home() {
       </div>
 
       {/* Div 2: About Us */}
-      <section className="py-10" data-aos="fade-up">
+      <section className="py-10">
+      {/* data-aos="fade-up"> */}
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-4">
             <h2 className="text-4xl bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500 font-bold">
@@ -113,7 +114,8 @@ export default function Home() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-10" data-aos="fade-up">
+      <section className="py-10"> 
+      {/* data-aos="fade-up"> */}
         <div className="glass-card rounded-3xl p-8 md:p-12 flex flex-col md:flex-row-reverse gap-8 items-center navbar-glow">
           <div className="flex-1 space-y-6">
             <div>
@@ -162,7 +164,8 @@ export default function Home() {
 
       {/* Div 3: Recent Events & Registration */}
       {/* Div 3: Recent Events & Registration */}
-      <section id="upcoming-events" className="py-3" data-aos="fade-up">
+      <section id="upcoming-events" className="py-3">
+        {/* data-aos="fade-up"> */}
         <h2 className="text-4xl py-1 md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500">
           Upcoming Events
         </h2>
