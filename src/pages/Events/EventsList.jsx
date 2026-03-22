@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Calendar, Trophy, ArrowRight, Search } from "lucide-react";
 import { useState } from "react";
 import { eventArray } from "./EventsData";
+import LazyImage from "../../components/ui/LazyImage";
 
 // 1. EXPORT the array so EventDetails.jsx can access it!
 // 2. Add a 'memories' array inside each event dictionary.
@@ -19,6 +20,7 @@ export default function EventsList() {
   return (
     <div className="min-h-screen pt-24 pb-12 relative z-10">
       <div className="max-w-7xl mx-auto px-4" data-aos="fade-up">
+        {/* data-aos="fade-up"> */}
         <h1 className="text-5xl font-bold text-center mt-5 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500" data-aos="fade-down">
           Hall of Events
         </h1>
@@ -49,7 +51,7 @@ export default function EventsList() {
                   {/* Poster Container */}
                   <div className="flex-1 aspect-[3/4] rounded-2xl bg-slate-200 dark:bg-slate-800 relative overflow-hidden shadow-lg border-2 border-slate-300 dark:border-slate-700">
                     {event.poster ? (
-                      <img src={event.poster} alt="Poster" className="w-full h-full object-cover" />
+                      <LazyImage src={event.poster} alt="Poster" className="w-full h-full object-cover" />
                     ) : (
                       <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-500">
                         <Calendar size={32} />
@@ -61,7 +63,7 @@ export default function EventsList() {
                   {/* Winners Container */}
                   <div className="flex-1 aspect-[3/4] rounded-2xl bg-slate-200 dark:bg-slate-800 relative overflow-hidden shadow-lg border-2 border-yellow-400/50">
                     {event.winners ? (
-                      <img src={event.winners} alt="Winners" className="w-full h-full object-cover" />
+                      <LazyImage src={event.winners} alt="Winners" className="w-full h-full object-cover" />
                     ) : (
                       <div className="absolute inset-0 flex flex-col items-center justify-center text-yellow-600 dark:text-yellow-500">
                         <Trophy size={32} />

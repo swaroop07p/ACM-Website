@@ -51,7 +51,7 @@ function App() {
         <div className="animated-bg"></div>
 
         {/* ANIMATION 2: The 3D Flying Birds (z-index: -10) */}
-        <VantaBackground darkMode={darkMode} />
+        {/* <VantaBackground darkMode={darkMode} /> */}
 
         {/* App Content */}
         <ScrollProgress />

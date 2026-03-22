@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { Moon, Sun, Menu, X, ChevronDown } from "lucide-react";
+import LazyImage from "../ui/LazyImage";
 // Importing FontAwesome icons for the mobile menu
 import {
   FaHome,
@@ -150,14 +151,14 @@ export default function Navbar({ darkMode, setDarkMode }) {
         >
           <div className="w-32 h-[60px] bg-slate-100 dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden shrink-0 shadow-[0_0_15px_rgba(20,184,166,0.4)] border border-teal-100 dark:border-slate-700 p-0.5">
             {/* Image for Light Mode */}
-            <img
+            <LazyImage
               src="/Home/ACMLOGO.png"
               alt="ACM Logo"
               className="dark:hidden w-full h-full object-cover rounded-full"
             />
 
             {/* Image for Dark Mode */}
-            <img
+            <LazyImage
               src="/Home/ACMLOGO1.png"
               alt="ACM Logo"
               className="hidden dark:block w-full h-full object-cover rounded-full"

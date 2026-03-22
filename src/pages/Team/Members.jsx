@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Linkedin, Maximize, Minimize } from 'lucide-react';
+import LazyImage from '../../components/ui/LazyImage';
 
 // --- THE ARRAY METHOD: 3 Separate Team Arrays ---
 
@@ -46,7 +47,7 @@ export default function Members() {
             {/* Image Section */}
             <div className={`w-full bg-slate-200 dark:bg-slate-800 relative overflow-hidden ${cardSize === 'small' ? 'h-32' : 'h-56'}`}>
                {member.image ? (
-                 <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                 <LazyImage src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                ) : (
                  <span className="absolute inset-0 flex items-center justify-center text-xs text-slate-500 font-medium">Photo Gap</span>
                )}
