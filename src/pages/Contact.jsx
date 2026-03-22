@@ -25,7 +25,7 @@ export default function Contact() {
     return (
     <div className="min-h-screen pt-24 pb-12 relative z-10">
       {/* <div className="animated-bg"></div> */}
-      <div className="max-w-3xl mx-auto px-4" data-aos="fade-up">
+      <div className="max-w-3xl mx-auto px-4" data-aos="zoom-in">
         <h1 className="text-5xl pt-5 py-1 font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-blue-500" data-aos="fade-down">Get In Touch</h1>
         
         {/* CHANGED: Added onSubmit={handleSubmit} */}

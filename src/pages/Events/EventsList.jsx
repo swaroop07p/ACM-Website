@@ -20,7 +20,6 @@ export default function EventsList() {
   return (
     <div className="min-h-screen pt-24 pb-12 relative z-10">
       <div className="max-w-7xl mx-auto px-4" data-aos="fade-up">
-        {/* data-aos="fade-up"> */}
         <h1 className="text-5xl font-bold text-center mt-5 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500" data-aos="fade-down">
           Hall of Events
         </h1>
@@ -43,7 +42,7 @@ export default function EventsList() {
             filteredEvents.map((event) => (
               <div
                 key={event.id}
-                className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] hover:border-teal-400/50"
+                className="glass-card rounded-3xl p-6 md:p-8 flex flex-col lg:flex-row gap-8 items-center group hover:shadow-[0_0_30px_rgba(20,184,166,0.3)] hover:border-teal-400/50" data-aos="fade-up"
               >
                 {/* ... The rest of your exact same card code stays here! (Dual images, info, link, etc.) ... */}
                 {/* Dual Image Display */}
